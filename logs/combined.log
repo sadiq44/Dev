@@ -1,1 +1,8 @@
 {"level":"info","message":"Hello from logger","service":"DEV"}
+{"level":"info","message":"Hello from logger","service":"DEV"}
+{"level":"info","message":"Hello from logger","service":"DEV"}
+{"level":"info","service":"DEV"}
+{"level":"info","message":"Hello from logger","service":"DEV"}
+{"level":"info","service":"DEV"}
+{"level":"info","message":"Hello from logger","service":"DEV"}
+{"level":"info","service":"DEV"}
