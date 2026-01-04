@@ -4,8 +4,6 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
-import { timestamp } from 'drizzle-orm/gel-core';
-import { date } from 'drizzle-orm/mysql-core';
 import router from '#routes/auth.routes.js';
 
 
@@ -31,6 +29,6 @@ app.get('/api', (req,res) => {
   res.status(200).json({message: 'API is running'});
 });
 
-app.use('/api/auth', router)
+app.use('/api/auth', router);
 
 export default app;

@@ -128,3 +128,5 @@
 {"level":"info","message":"User registered succussfully: ${email}","service":"DEV"}
 {"level":"info","message":"::1 - - [02/Jan/2026:15:39:13 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 90 \"-\" \"HTTPie\"","service":"DEV"}
 {"level":"info","message":"::1 - - [02/Jan/2026:15:39:25 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 31 \"-\" \"HTTPie\"","service":"DEV"}
+{"level":"info","message":"Hello from logger","service":"DEV"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [04/Jan/2026:06:29:22 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0\"","service":"DEV"}

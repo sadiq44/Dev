@@ -1,6 +1,6 @@
 import logger from '#config/logger.js';
 
-import jwt, { verify } from 'jsonwebtoken';
+import jwt from 'jsonwebtoken';
 
 
 const JWT_SECRET=process.env.JWT_SECRET;
