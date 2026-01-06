@@ -218,3 +218,9 @@
 {"level":"info","message":"User ${users.email} created succussfully","service":"DEV"}
 {"level":"info","message":"User registered succussfully: ${email}","service":"DEV"}
 {"level":"info","message":"::ffff:127.0.0.1 - coder [06/Jan/2026:06:07:06 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 87 \"-\" \"HTTPie\"","service":"DEV"}
+{"level":"error","message":"Error creating user: ${error}","service":"DEV"}
+{"level":"error","message":"signup error User already exists","service":"DEV","stack":"Error: User already exists\n    at createUser (file:///config/Dev/src/services/auth.service.js:19:38)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///config/Dev/src/controllers/auth.controller.js:25:17)"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Jan/2026:07:12:49 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 431 \"-\" \"HTTPie\"","service":"DEV"}
+{"level":"info","message":"User ${users.email} created succussfully","service":"DEV"}
+{"level":"info","message":"User registered succussfully: ${email}","service":"DEV"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Jan/2026:07:12:59 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 88 \"-\" \"HTTPie\"","service":"DEV"}
