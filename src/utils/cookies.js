@@ -8,8 +8,8 @@ export const cookies = {
     maxAge: 15 * 60 * 1000,
 
   }),
-  set: (res,name,value,options={}) => {
-    res.cookies(name,value, { ...cookies.getOptions(), ...options}) ; 
+   set: (res, name, value, options={}) => {
+    res.cookie(name,value, { ...cookies.getOptions(), ...options}) ; 
   },
   clear: (res,name,value,options={}) => {
     res.clearCookies(name, { ...cookies.getOptions(), ...options}) ; 

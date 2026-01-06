@@ -1,9 +1,9 @@
 import logger from '#config/logger.js';
 import { signupSchema } from '#validations/auth.validation.js';
 import { formatValidationError } from '#utils/format.js';
-import { createUser } from '#services/auth.service.js';
 import { jwttoken } from '#utils/jwt.js';
 import { cookies } from '#utils/cookies.js';
+import { createUser } from '#services/auth.service.js';
 
 
 export const signup = async (req, res, next) => {
@@ -19,10 +19,10 @@ export const signup = async (req, res, next) => {
     }
 
     const {name, email, password, role} = validationResult.data;  
-
+    
     //Auth service
 
-    const user= await createUser(name, email, password, role);
+    const user= await createUser({name, email, password, role});
 
     const token= jwttoken.sign({id: user.id, name:user.name, role:user.role});
 
